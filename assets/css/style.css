@@ -31,7 +31,7 @@
       padding: 5px;
       font-size: 13px;
       line-height:2;
-      color: "#545658";
+      color: #545658;
       background-color: #fbfbfb;
       border: 1px solid #d9d9d9;
       border-radius: 3px;
@@ -320,14 +320,19 @@
       .submit-button {
         padding: 13px;
         color: #fff;
+        border: none;
+        outline: none;
         background-color: #01bfbd;
       }
 
       .submit-button:active {
+        outline: none;
         background-color: #fff;
         color: #01a6a4;
         border: 1px solid #d9d9d9;
       }
+
+      
       
       /*アカウント作成~します*/
         .agreement {
@@ -368,9 +373,6 @@
     line-height: 16px;
   }
 
-  .footer a {
-    margin-bottom: 8px;
-  }
   .footer-color {
     color: #01a6a4;
   }
