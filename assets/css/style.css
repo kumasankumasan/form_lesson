@@ -1,1 +1,362 @@
 @charset "utf-8";
+
+.wrapper {
+  padding: 15px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+/*共通*/
+    /*リンクの下線を消す*/
+    .a {
+      text-decoration: none;
+    }
+
+    /*各コンテンツのmargin-bottom*/
+    .row {
+      margin-bottom: 20px;
+    }
+
+
+    /*入力出来る部分*/
+    .input {
+      height: 36px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px;
+      font-size: 13px;
+      background-color: #fbfbfb;
+      border: 1px solid #b9b9b9;
+      border-radius: 3px;
+    }
+
+    .input:focus {
+      background-color: #fff;
+      border-color: rgba(59, 133, 110, 0.4);
+      box-shadow:0 0 0 2px rgba(1, 191, 189, .1);
+    }
+
+    /**/
+    .half {
+      width: 50%;
+    }
+
+    .text {
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #545658;
+    }
+
+
+/*共通*/
+
+/*<div class="main-content">の中身*/
+    .main-content {
+      margin-bottom: 32px;
+      padding: 48px 64px;
+      border: 1px solid #b9b9b9;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow:0 0 4px 0 rgba(0, 0, 0, .18);
+    }
+
+    /*アカウント作成*/
+    .title {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+
+    /*Facebook,Googleでスタート*/
+    .columns {
+      display: flex;
+      margin-bottom: 8px;;
+    }
+
+    /*Googleでスタートの左空白*/
+    .column:last-child {
+      margin-left: 8px;
+    }
+
+    /*Facebook,Googleでスタート共通*/
+      .fg-box {
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+        transition: .3s;
+        padding: 13px;
+        font-size: 13px;
+        border: 1px solid #b9b9b9;
+        border-radius: 3px;
+      }
+
+      .full {
+        width: 100%;
+      }
+    /*Facebook,Googleでスタート共通*/
+
+    /*Facebook*/
+      .facebook {
+        color:#fff;
+        background-color: #3b5999;
+        border-color: #3b5999;
+      }
+
+      .facebook:hover {
+        background-color:#344e87 ;
+      }
+    /*Facebook*/
+
+    /*Google*/
+      .google {
+        color:firebrick;
+        background-color: #fff;
+      }
+
+      .google:hover {
+        background-color: #f7f7f7;
+      }
+    /*Google*/
+
+    /*タイムライン投稿～ありません,アカウント情報共通*/
+    .default-color {
+      color: #949697;
+      font-size: 12px;
+    }
+
+    /*タイムライン投稿～ありません*/
+    .supplement {
+      text-align: center;
+    }
+
+    /*アカウント情報,横線*/
+      /**/
+      .devider {
+        margin: 20px 0;
+        text-align: center;
+        position: relative;
+      }
+
+      /*横線*/
+      .devider::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        background-color: #ececec;
+      }
+
+      /*アカウント情報*/
+      .devider p {
+        display: inline-block;
+        position: relative;
+        padding: 0 5px;
+        background-color: #fff;
+      }
+    /*アカウント情報,横線*/
+
+    /*<!-- 登録フォーム -->の中身*/
+      /*「※」*/
+      .caution {
+        color: red;
+      }
+
+      /*<!-- 名字,名前 -->の中身*/
+
+        /*名字,名前のボックス*/
+        .name-box {
+          display: flex;
+        }
+
+        /**/
+        .name {
+          margin-left: 16px;
+        }
+
+        /*名字の左のmargin打消し*/
+        .name:first-child {
+          margin-left: 0;
+        }
+      /*<!-- 名字,名前 -->の中身*/
+
+      /*<!-- 性別 -->の中身*/
+        /*性別全体*/
+        .gender {
+          color: #545658;
+          font-size: 16px;
+        }
+
+        /*ラジオボックス「女性」「その他」左の空白*/
+        .gender-content {
+          margin-left: 15px;
+        }
+
+        /*ラジオボックス「男性」左の空白*/
+        .gender-content:first-child {
+          margin-left: 0;
+        }
+        
+        /*「男性」「女性」「その他」*/
+        .gender-content span {
+          position: relative;
+          display: inline-block;
+          padding: 3px 3px 3px 20px;
+        }
+
+        /*元のラジオボックス非表示*/
+        .gender-content input {
+          display: none;
+        }
+
+        /*ラジオボックスの外枠*/
+        .gender-content span::before {
+          content:'';
+          position: absolute;
+          left: 0;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b9b9b9;
+          border-radius: 50%;
+        }
+
+        /*ラジオボックスの中の色丸*/
+        .gender-input:checked + span::after {
+          content:'';
+          position: absolute;
+          left: 4px;
+          top: 30%;
+          height: 8px;
+          width: 8px;
+          background-color: #01bfbd;
+          border: 0;
+          border-radius: 50%;
+        }
+      /*<!-- 性別 -->の中身*/
+
+      /*<!-- 出身 -->の中身*/
+        .select {
+          position: relative;
+        }
+
+        /*「↓」のアイコン*/
+        .select::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: 10px;
+          top: 40%;
+          transform: rotate(-45deg);
+          height: 5px;
+          width: 5px;
+          border-left: 2px solid #b9b9b9;
+          border-bottom: 2px solid #b9b9b9;
+        }
+
+        /*元の「↓」を消す*/
+        .input-arrow {
+          -webkit-appearance:none;
+        }
+      /*<!-- 出身 -->の中身*/
+
+      /*<!-- 希望コース -->の中身*/
+        /*元のチェックボックスを消す*/
+        .course input {
+          display: none;
+        }
+
+        /*フロント,バック,アプリ*/
+        .course-check {
+          margin-bottom: 10px;
+          color: #545658;
+          font-size: 16px;
+        }
+
+        .course-check_text {
+          position: relative;
+          padding-left: 25px;
+        }
+
+        /*チェックボックスの枠*/
+        .course-check_text::before {
+          content: '';
+          position: absolute;
+          top:1%;
+          left: 0;
+          height: 15px;
+          width: 15px;
+          border: 1px solid #b9b9b9;
+        }
+
+        /**/
+        .course-check input:checked + .course-check_text::after {
+          content: '';
+          position: absolute;
+          top: -10%;
+          left: 2px;
+          height: 8px;
+          width: 16px;
+          transform: rotate(-45deg);
+          border-left:3px solid #01bfbd;
+          border-bottom: 3px solid #01bfbd ;
+        }
+      /*<!-- 希望コース -->の中身*/
+
+
+      
+      /*アカウント作成*/
+      .submit-button {
+        padding: 13px;
+        color: #fff;
+        background-color: #01bfbd;
+      }
+      
+      /*アカウント作成~します*/
+        .agreement {
+          font-size: 12px;
+        }
+
+        .agreement a {
+          color: #01bfbd;
+        }
+      /*アカウント作成~します*/
+
+      /*備考*/
+      .remarks .rinput-emarks{
+        height: 100px;
+      }
+
+      textarea {
+        resize: none;
+       }
+
+      /**/
+
+    /*<!-- 登録フォーム -->の中身*/
+/*<div class="main-content">の中身*/
+
+/*footer*/
+  .footer {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footer p {
+    margin-bottom: 8px;
+  }
+
+  .footer-color {
+    color: #01bfbd;
+  }
+
+  .mail-bottom {
+    margin-bottom: 8px;
+  }
+/*footer*/

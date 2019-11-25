@@ -10,6 +10,219 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <!-- 「wrapper」の部分 -->
+    <section class="wrapper">
 
+      <!-- 「inner」の部分 -->
+      <div class="inner">
+
+        <!-- main-contentの中身 -->
+          <div class="main-content">
+            
+            <!-- formのタイトル -->
+            <h1 class="title">
+              アカウント作成
+            </h1>
+
+            <!-- Facebook,Googleでスタート -->
+            <div class="columns">
+
+              <!-- Facebookでスタート -->
+              <div class="column half ">
+                <a href="#" class="facebook fg-box full">Facebookでスタート</a>
+              </div>
+
+              <!-- Googleでスタート -->
+              <div class="column half">
+                <a href="#" class="google fg-box full">Googleでスタート</a>
+              </div>
+
+            </div>
+            <!-- Facebook,Googleでスタート -->
+
+            <!-- タイムライン投稿～ありません -->
+            <p class="supplement default-color">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            
+            <!-- アカウント情報,横線 -->
+            <div class="devider">
+                <p class="default-color">アカウント情報</p>
+            </div>
+
+            <!-- 登録フォーム -->
+              <form class="form" action="#" method="post">
+                <!-- 名字,名前 -->
+                  <div class="row name-box">
+
+                    <!-- 名字 -->
+                    <div class="name half">
+                      <p class="text">
+                        名字
+                        <span class="caution">※</span>
+                      </p>
+                      <input type="text" class="input" name="text" required>
+                    </div>
+
+                    <!-- 名前 -->
+                    <div class="name half">
+                      <p class="text">
+                        名前
+                        <span class="caution">※</span>
+                      </p>
+                      <input type="text" class="input" name="text" required>          
+                    </div>
+
+                  </div>
+                <!-- 名字,名前 -->
+
+                <!-- 性別 -->
+                  <div class="row">
+                    <p class="text">性別</p>
+                    <div class="gender">
+                      <label class="gender-content">
+                        <input type="radio" name="radio" value="radio1" class="gender-input">
+                          <span>男性</span>
+                      </label>
+                      <label class="gender-content">
+                        <input type="radio" name="radio" value="radio2" class="gender-input">
+                          <span>女性</span>
+                      </label>
+                      <label class="gender-content">
+                        <input type="radio" name="radio" value="radio3" class="gender-input">
+                          <span>その他</span>
+                      </label>
+                    </div>
+                  </div>
+                <!-- 性別 -->
+
+                <!-- 出身 -->
+                  <div class="row half">
+                    <p class="text">出身</p>
+                    <div class="select">
+                      <select name="sample" class="input input-arrow">
+                        <option value="sample">東京</option>
+                        <option value="sample">千葉</option>
+                        <option value="sample">埼玉</option>
+                        <option value="sample">神奈川</option>
+                      </select>
+                    </div>
+                  </div>
+                <!-- 出身 -->
+
+                <!-- Eメール -->
+                <div class="row">
+                  <p class="text">
+                    Eメール
+                    <span class="caution">※</span>
+                  </p>
+                  <input type="email" class="input" name="email" placeholder="ex) hoge@example.com" required>
+                </div>
+                <!-- Eメール -->
+
+                <!-- 電話番号 -->
+                <div class="row">
+                    <p class="text">
+                        電話番号
+                      <span class="caution">※</span>
+                    </p>
+                    <input type="tel" class="input" name="email" placeholder="ex) 09012345678" required>
+                </div>
+                <!-- 電話番号 -->
+
+                <!-- パスワード -->
+                <div class="row">
+                  <p class="text">
+                    パスワード
+                    <span class="caution">※</span>
+                  </p>
+                  <input type="password" class="input" name="password" required>
+                </div>
+                <!-- パスワード -->
+
+                <!-- パスワード（確認用） -->
+                <div class="row">
+                  <p class="text">
+                    パスワード（確認用）
+                    <span class="caution">※</span>
+                  </p>
+                  <input type="password" class="input" name="password" required>
+                </div>
+                <!-- パスワード（確認用） -->
+
+                <!-- 希望コース -->
+                <div class="row course">
+                  <p class="text">希望コース</p>
+                  <!-- フロントエンド -->
+                  <div class="course-check">
+                    <input type="checkbox" name="checkbox" value="checkbox1" id="checkbox1">
+                    <label class="course-check_text" for="checkbox1">
+                      フロントエンド
+                    </label>
+                  </div>
+                  <!-- フロントエンド -->
+
+                  <!-- バックエンド -->
+                  <div class="course-check">
+                    <input type="checkbox" name="checkbox" value="checkbox2" id="checkbox2">
+                    <label class="course-check_text" for="checkbox2">
+                      バックエンド
+                    </label>
+                  </div>
+                  <!-- バックエンド -->
+
+                  <!-- アプリ -->
+                  <div class="course-check">
+                    <input type="checkbox" name="checkbox" value="checkbox3" id="checkbox3">
+                    <label class="course-check_text" for="checkbox3">
+                      アプリ
+                    </label>
+                  </div>
+                  <!-- アプリ -->
+                </div>
+                <!-- 希望コース -->
+
+                <!-- 備考 -->
+                <div class="row remarks">
+                  <p class="text">備考</p>
+                  <textarea class="input rinput-emarks full" name="remarks"placeholder="ここに記入してください" required></textarea>
+                </div>
+                <!-- 備考 -->
+
+                <!-- アカウント作成 -->
+                <div class="row">
+                  <input type="submit" value="リクエストを送信" class="submit-button fg-box full">
+                </div>
+                <!-- アカウント作成 -->
+
+                <!-- 利用規約,プライバシーポリシー -->
+                
+                <p class="agreement">
+                  アカウントを作成することにより、
+                  <a href="">利用規約</a>
+                  と
+                  <a href="">プライバシーポリシー</a>
+                  に同意するものとします。
+                </p>
+                <!-- 利用規約,プライバシーポリシー -->
+
+              </form>
+            <!-- 登録フォーム -->
+            
+          <!-- main-contentの中身 -->
+
+        </div>
+        <!-- innerの中身 -->
+
+        <!-- 「footer」の部分 -->
+        <div class="footer">
+          <p>すでにアカウントをお持ちですか？
+            <a class="footer-color" href="">ログイン</a>
+          </p>
+          <a class="footer-color mail-bottom" href="">認証メールが届きませんか？</a>
+        </div>
+        <!-- 「footer」の部分 -->
+      </div>
+      <!-- 「inner」の部分 -->
+    </section>
+    <!-- 「wrapper」の部分 -->
   </body>
 </html>
