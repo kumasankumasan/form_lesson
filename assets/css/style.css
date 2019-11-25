@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .wrapper {
-  padding: 15px 0;
+  padding: 32px 0;
   width: 100%;
   background-color: #f2f6f7;
 }
@@ -30,12 +30,15 @@
       box-sizing: border-box;
       padding: 5px;
       font-size: 13px;
+      line-height:2;
+      color: "#545658";
       background-color: #fbfbfb;
-      border: 1px solid #b9b9b9;
+      border: 1px solid #d9d9d9;
       border-radius: 3px;
     }
 
     .input:focus {
+      outline: none;
       background-color: #fff;
       border-color: rgba(59, 133, 110, 0.4);
       box-shadow:0 0 0 2px rgba(1, 191, 189, .1);
@@ -59,7 +62,6 @@
     .main-content {
       margin-bottom: 32px;
       padding: 48px 64px;
-      border: 1px solid #b9b9b9;
       border-radius: 4px;
       background-color: #fff;
       box-shadow:0 0 4px 0 rgba(0, 0, 0, .18);
@@ -70,6 +72,7 @@
       text-align: center;
       margin-bottom: 24px;
       font-size: 24px;
+      color: #545658;
     }
 
     /*Facebook,Googleでスタート*/
@@ -91,7 +94,7 @@
         transition: .3s;
         padding: 13px;
         font-size: 13px;
-        border: 1px solid #b9b9b9;
+        border: 1px solid #d9d9d9;
         border-radius: 3px;
       }
 
@@ -114,7 +117,7 @@
 
     /*Google*/
       .google {
-        color:firebrick;
+        color:#dd4b39;
         background-color: #fff;
       }
 
@@ -189,6 +192,7 @@
       /*<!-- 性別 -->の中身*/
         /*性別全体*/
         .gender {
+          display: flex;
           color: #545658;
           font-size: 16px;
         }
@@ -222,8 +226,8 @@
           left: 0;
           height: 14px;
           width: 14px;
-          background-color: #fff;
-          border: 1px solid #b9b9b9;
+          background-color: #fbfbfb;
+          border: 1px solid #d9d9d9;
           border-radius: 50%;
         }
 
@@ -244,6 +248,7 @@
       /*<!-- 出身 -->の中身*/
         .select {
           position: relative;
+          color: #545658;
         }
 
         /*「↓」のアイコン*/
@@ -256,8 +261,8 @@
           transform: rotate(-45deg);
           height: 5px;
           width: 5px;
-          border-left: 2px solid #b9b9b9;
-          border-bottom: 2px solid #b9b9b9;
+          border-left: 2px solid #d9d9d9;
+          border-bottom: 2px solid #d9d9d9;
         }
 
         /*元の「↓」を消す*/
@@ -317,6 +322,12 @@
         color: #fff;
         background-color: #01bfbd;
       }
+
+      .submit-button:active {
+        background-color: #fff;
+        color: #01a6a4;
+        border: 1px solid #d9d9d9;
+      }
       
       /*アカウント作成~します*/
         .agreement {
@@ -324,6 +335,10 @@
         }
 
         .agreement a {
+          color: #01a6a4;
+        }
+
+        .agreement a:hover {
           color: #01bfbd;
         }
       /*アカウント作成~します*/
@@ -350,10 +365,20 @@
 
   .footer p {
     margin-bottom: 8px;
+    line-height: 16px;
   }
 
+  .footer a {
+    margin-bottom: 8px;
+  }
   .footer-color {
+    color: #01a6a4;
+  }
+
+  .footer-color:hover {
     color: #01bfbd;
+    border-bottom: 1px solid #ececec;
+    border-bottom-color: #01bfbd;
   }
 
   .mail-bottom {
